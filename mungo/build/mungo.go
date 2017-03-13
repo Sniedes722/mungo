@@ -2,6 +2,7 @@
 package main
 
 import "C"
+import "fmt"
 
 //export add
 func add(left, right int) int {
@@ -24,12 +25,8 @@ func divide(left, right int) int {
 }
 
 //export average
-func average(xs []float64) float64 {
-	total := 0.0
-	for _, v := range xs {
-		total += v
-	}
-	return total / float64(len(xs))
+func average(C.array(int)) {
+	return C.array()
 }
 
 func main() {

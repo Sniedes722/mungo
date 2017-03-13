@@ -60,7 +60,7 @@ extern GoInt multiply(GoInt p0, GoInt p1);
 
 extern GoInt divide(GoInt p0, GoInt p1);
 
-extern GoFloat64 average(GoSlice p0);
+extern void average(GoSlice p0);
 
 #ifdef __cplusplus
 }

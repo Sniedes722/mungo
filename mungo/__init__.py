@@ -1,6 +1,8 @@
 from ctypes import cdll
 
-lib = cdll.LoadLibrary('./mungo/build/sandbox.so')
+lib = cdll.LoadLibrary('./mungo/build/mungo.so')
+
+lib.
 
 class MungoArray:
     
